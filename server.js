@@ -8,9 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json({ extended: false }));
 const ejs = require("ejs");
 app.set("view engine", "ejs");
-// mongoose.connect(process.env.MONGODB_URL ||
-//     "mongodb+srv://nv-spark:G5ik2AVyxjocRbWy@users.tkvlc.mongodb.net/userData?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }
-// );
 
 mongoose.connect("mongodb+srv://dbUser:nb81QRHbAP6abxZi@cluster0.qgxyp.mongodb.net/userData?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set("useFindAndModify", false);
